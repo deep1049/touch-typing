@@ -28,7 +28,7 @@ const App = () => {
   }, []);
   const updateTime = () => {
     setTime((prev) => {
-      if (prev === 10) {
+      if (prev === 300) {
         alert("time up");
         if (interval) {
           clearInterval(interval);
