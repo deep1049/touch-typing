@@ -1,7 +1,7 @@
 import moment from "moment";
 
 export const GetRandomString = () => {
-  let stringLength = 30;
+  let stringLength = 5;
   let alphabetsAllowed = [" ", "a", "s", "d", "f", "j", "k", "l", ";"];
 
   let generatedString = "";
