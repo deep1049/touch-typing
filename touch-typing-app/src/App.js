@@ -228,6 +228,9 @@ const App = () => {
     intervalCleanup();
     dispatch(GetAccuracy(accuracy));
   };
+  const reload = () => {
+    window.location.reload();
+  };
 
   return (
     <div className="app">
@@ -249,6 +252,12 @@ const App = () => {
           type="button"
           value="Submit"
           onClick={computeResult}
+        />
+        <input
+          className="next-btn"
+          type="button"
+          value="Next"
+          onClick={reload}
         />
       </div>
       <div className="result">
